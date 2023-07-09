@@ -29,6 +29,9 @@ personagens.forEach((personagem) => {
             window.scrollTo({top: 0, behavior: 'smooth'});
         }
 
+        const personagemSelecionado = document.getElementById('nome-personagem');
+        personagemSelecionado.classList.remove('selecionado');
+        
         personagem.classList.add('selecionado');
 
         alterarImagemPersonagemSelecionado(personagem);
